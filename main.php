@@ -12,7 +12,7 @@ include 'commands/ping.php';
 include 'CommandHandler.php';
 
 $discord = new Discord([
-    'token' => 'NTY5NTIwOTk5NzcxNjY4NDkw.GvYyqt.gNxc-kHOo3-lu43xPGHdEaUT4cJf0l0QxbwKj4',
+    'token' => getenv('TOKEN'),
     'intents' => Intents::getDefaultIntents()
     //      | Intents::MESSAGE_CONTENT, // Note: MESSAGE_CONTENT is privileged, see https://dis.gd/mcfaq
 ]);
