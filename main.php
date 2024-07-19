@@ -20,6 +20,7 @@ $discord = new Discord([
 $discord->on(Event::MESSAGE_CREATE, function (Message $message, Discord $discord) {
     $pingh = new PingCommand();
     $pingh->execute($message, $discord);
+
 });
 
 $discord->on('ready', function (Discord $discord) {
