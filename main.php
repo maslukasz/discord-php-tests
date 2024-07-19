@@ -9,8 +9,6 @@ use Discord\WebSockets\Event;
 
 include 'commands/ping.php';
 
-include 'CommandHandler.php';
-
 $discord = new Discord([
     'token' => getenv('TOKEN'),
     'intents' => Intents::getDefaultIntents()
