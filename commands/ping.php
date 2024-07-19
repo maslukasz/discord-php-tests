@@ -10,5 +10,6 @@ class PingCommand
         print_r($message);
         return $message->reply('Pong!');
 
+
     }
 }
